@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valenzuela,Jhon Paul A. :></title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html">
+            <img src="jplogo.png" class="logo">  
+        </a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+    
+
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about1">
+                    <img src="babyjp.jpg">                
+                </div>
+                <div class="about2">
+                    <h1 class="sub">About Me</h1>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Me')">Me</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Me">
+                            <ul>
+                                <li><span>Name</span><br>Jhon Paul Valenzuela</li>
+                                <li><span>Age</span><br>22</li>
+                                <li><span>Email</span><br>jp.agustin.valenzuela.19@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2016 - Present</span><br>St. Dominic College of Asia</li>
+                                <li><span>2005 - 2016:</span><br>The New Kuwait Philippines International School (NKPIS)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Skills">
+                            <ul>
+                                <li><span>Work Experiences</span><br>CREOTEC Dasmarinas City(Immertion)</li>
+                                <li><span>Skills</span><br>Fast Learner and able to adapt at the work environment</li>
+                                <li><span></span><br>Database Management: Familiar with database systems and MYSQL for data retrieval and manipulation.</li>
+                                <li><span></span><br>Programming Languages: Proficient in programming languages such as Java, Python, and HTML</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <div class="buttoncenter">
+                <button onclick="goToPreviousPage()" class="button"><span></span>BACK</button>
+                <button onclick="goToNextPage()" class="button"><span></span>NEXT</button>
+    </div>
+<!--TAB SCRIPT-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!--TAB SCRIPT-->
+</div>
+</html>
+
+<!--BUTTON SCRIPT-->
+<script>
+    function goToNextPage() {
+        window.location.href = 'experience.html';
+    }
+    function goToPreviousPage(){
+        window.location.href = 'index.html';d
+    }
+</script>
+<!--BUTTON SCRIPT-->
+

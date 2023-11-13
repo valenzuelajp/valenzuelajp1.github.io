@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valenzuela,Jhon Paul A. :></title>
+    <link rel="stylesheet" href="experience.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html">
+            <img src="jplogo.png" class="logo">  
+        </a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+
+<!--BUTTON SCRIPT-->
+<section class="about">
+    <div class="main">
+    <img src="jpsb.jpg" class="picture">
+    <div class="about-text">
+        <h2>Experience</h2>
+        <p> As a BSIT student at St. Dominic College of Asia, 
+            I gained valuable experience in developing interactive and 
+            visually appealing websites using NetBeans for Java and C#, 
+            creating dynamic forms, and enhancing user interfaces with HTML and CSS. </p>
+ <!--BUTTON SCRIPT-->           
+            
+            <!--BUTTON-->
+            <div>
+                <button onclick="goToPreviousPage()" class="button"><span></span>BACK</button>
+                <button onclick="goToNextPage()" class="button"><span></span>NEXT</button>
+    </div>
+    <!--BUTTON-->
+
+</div>
+</html>
+
+<!--BUTTON SCRIPT-->
+<script>
+    function goToNextPage() {
+        window.location.href = 'photography.html';
+    }
+    function goToPreviousPage(){
+        window.location.href = 'about.html';
+    }
+</script>
+<!--BUTTON SCRIPT-->
+
